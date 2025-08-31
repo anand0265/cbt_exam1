@@ -1,7 +1,9 @@
 const mongoose = require("mongoose");
 const express = require("express");
+require("dotenv").config();
 const bodyParser = require("body-parser");
 const { MONGO_URI } = require("./config/keys");
+const { CLIENT_URL } = require("./config/keys");
 const createadmin = require("./services/createAdmin");
 
 const cors = require("cors");
@@ -21,7 +23,7 @@ const groups = require("./routes/group");
 const PORT = 3900;
 app.use(
   cors({
-    origin: "http://localhost:3000", // React app ka URL
+    origin: CLIENT_URL, // React app ka URL
     methods: "GET,POST,PUT,DELETE",
     credentials: true,
   })
