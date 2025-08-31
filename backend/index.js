@@ -18,7 +18,7 @@ const snapshots = require("./routes/snapshots");
 const audio = require("./routes/audio");
 
 const groups = require("./routes/group");
-const PORT = process.env.PORT || 3900;
+const PORT = 3900;
 app.use(
   cors({
     origin: "http://localhost:3000", // React app ka URL
