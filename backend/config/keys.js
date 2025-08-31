@@ -10,5 +10,5 @@ module.exports = {
   SENDGRID_API_KEY: process.env.SENDGRID_API_KEY || "",
   EMAIL: process.env.EMAIL || "khazaanacoupon@gmail.com",
   EMAIL_PASSWORD: process.env.EMAIL_PASSWORD || "",
-  CLIENT_URL: process.env.CLIENT_UR,
+  CLIENT_URL: process.env.CLIENT_URL,
 };
